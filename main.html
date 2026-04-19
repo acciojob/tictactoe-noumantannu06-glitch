@@ -8,17 +8,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <div class="container">
-        <!-- Player names form -->
+	<div class="container">
+        <!-- Player names form - FIXED IDs for Cypress -->
         <div id="nameForm">
             <h2>Tic Tac Toe</h2>
             <div class="form-group">
-                <label for="player-1">Player 1 (X):</label>
-                <input type="text" id="player-1" placeholder="Enter name" required>
+                <label for="player1">Player 1 (X):</label>
+                <input type="text" id="player1" placeholder="Enter name">
             </div>
             <div class="form-group">
-                <label for="player-2">Player 2 (O):</label>
-                <input type="text" id="player-2" placeholder="Enter name" required>
+                <label for="player2">Player 2 (O):</label>
+                <input type="text" id="player2" placeholder="Enter name">
             </div>
             <button id="submit">Start Game</button>
         </div>
@@ -26,7 +26,7 @@
         <!-- Game board -->
         <div id="gameBoard" class="board">
             <h1>Tic Tac Toe</h1>
-            <div id="message" class="message">Player 1, you're up!</div>
+            <div id="message" class="message"></div>
             <div class="grid">
                 <div class="cell" id="1"></div>
                 <div class="cell" id="2"></div>
